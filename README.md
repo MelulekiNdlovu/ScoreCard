@@ -9,3 +9,4 @@ HTML, Javascript, Bootstrap 4.3, localforage, php.
 
 ## Sports currently included:
 - Basketball
+- Football
