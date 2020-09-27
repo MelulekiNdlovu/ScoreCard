@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score card</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div id="area52"></div>
+
+<div class="container bg-info text-white rounded p-2">
+	<h3 class="text-center">Score Sheet</h3>
+	<div class="mb-2">
+		<label>Match Date</label>
+		<input class="form-control" type="date" id="date">
+	</div>
+
+	<div class="row mx-auto">
+			<div class="col">
+			<label>My Team</label>
+			<input class="form-control" type="text" id="myTeam">
+			<label>SCORE</label>
+			<input class="form-control" type="number" id="myScore" min="0" value="00">
+			</div>
+
+			<div class="col">
+			<label>Opponents</label>
+			<input class="form-control" type="text" id="opps">
+			<label>SCORE</label>
+			<input class="form-control" type="number" id="oppScore" min="0" value="00">
+			</div>
+			
+	</div>
+</div>
+
+<div class="container">
+	<div class="row my-2">
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 1</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa1Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa1Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa1Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa1Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa1Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa1Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 2</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa2Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa2Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa2Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa2Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa2Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa2Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 3</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa3Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa3Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa3Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa3Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa3Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa3Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 4</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa4Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa4Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa4Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa4Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa4Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa4Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 5</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa5Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa5Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa5Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa5Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa5Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa5Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 6</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa6Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa6Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa6Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa6Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa6Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa6Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 7</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa7Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa7Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa7Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa7Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa7Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa7Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 8</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa8Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa8Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa8Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa8Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa8Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa8Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 9</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa9Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa9Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa9Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa9Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa9Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa9Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 10</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa10Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa10Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa10Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa10Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa10Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa10Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 11</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa11Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa11Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa11Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa11Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa11Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa11Fouls" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 12</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa12Name">
+
+			<label>Points</label>
+			<input class="form-control" type="number" id="playa12Pts" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa12Assists" min="0" value="0">
+
+			<label>Rebounds</label>
+			<input class="form-control" type="number" id="playa12Rebounds" min="0" value="0">
+
+			<label>Steals</label>
+			<input class="form-control" type="number" id="playa12Steals" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa12Fouls" min="0" value="0">
+		</div>
+	</div>
+	<button class="btn btn-lg btn-outline-primary fixed-bottom" onclick="saver()">Save</button>
+</div>
+
+
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/localforage.min.js"></script>
+<script src="js/bball.js"></script>
+</body>
+</html>

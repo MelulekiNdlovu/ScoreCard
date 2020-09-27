@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score card</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div id="area52"></div>
+
+<div class="container bg-info text-white rounded p-2">
+	<h3 class="text-center">Score Sheet</h3>
+	<div class="mb-2">
+		<label>Match Date</label>
+		<input class="form-control" type="date" id="date">
+	</div>
+
+	<div class="row mx-auto">
+			<div class="col">
+			<label>My Team</label>
+			<input class="form-control" type="text" id="myTeam">
+			<label>SCORE</label>
+			<input class="form-control" type="number" id="myScore" min="0" value="0">
+			</div>
+
+			<div class="col">
+			<label>Opponents</label>
+			<input class="form-control" type="text" id="opps">
+			<label>SCORE</label>
+			<input class="form-control" type="number" id="oppScore" min="0" value="0">
+			</div>
+			
+	</div>
+</div>
+
+<div class="container bg-info text-white rounded my-2 p-2">
+	<div class="row">
+		<div class="col">
+			<label>Shots</label>
+			<input class="form-control" type="number" id="myShots" min="0" value="0">
+
+			<label>On Target</label>
+			<input class="form-control" type="number" id="myOnTarget" min="0" value="0">
+
+			<label>Corners Won</label>
+			<input class="form-control" type="number" id="myConWon" min="0" value="0">
+
+			<label>Corners Conceded</label>
+			<input class="form-control" type="number" id="myConLost" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="myFouls" min="0" value="0">
+
+			<label>Yellow Cards</label>
+			<input class="form-control" type="number" id="myYellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="myOnReds" min="0" value="0">
+		</div>
+	</div>
+</div>
+
+
+<!--player stats-->
+<div class="container my-4">
+	<h3>Player Stats</h3>
+	<div class="row">
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 1</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa1Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa1Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa1Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa1Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa1Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa1Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa1ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa1ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa1Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 2</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa2Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa2Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa2Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa2Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa2Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa2Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa2ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa2ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa2Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 3</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa3Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa3Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa3Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa3Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa3Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa3Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa3ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa3ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa3Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 4</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa4Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa4Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa4Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa4Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa4Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa4Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa4ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa4ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa4Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 5</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa5Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa5Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa5Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa5Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa5Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa5Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa5ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa5ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa5Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 6</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa6Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa6Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa6Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa6Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa6Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa6Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa6ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa6ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa6Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 7</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa7Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa7Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa7Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa7Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa7Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa7Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa7ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa7ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa7Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 8</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa8Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa8Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa8Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa8Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa8Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa8Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa8ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa8ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa8Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 9</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa9Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa9Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa9Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa9Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa9Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa9Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa9ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa9ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa9Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 10</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa10Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa10Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa10Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa10Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa10Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa10Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa10ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa10ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa10Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 11</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa11Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa11Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa11Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa11Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa11Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa11Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa11ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa11ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa11Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 12</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa12Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa12Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa12Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa12Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa12Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa12Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa12ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa12ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa12Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 13</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa13Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa13Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa13Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa13Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa13Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa13Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa13ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa13ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa13Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2">
+			<h5>Player 14</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa14Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa14Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa14Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa14Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa14Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa14Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa14ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa14ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa14Saves" min="0" value="0">
+		</div>
+
+		<div class="col-md-4 p-2 bg-secondary text-white rounded shadow">
+			<h5>Player 15</h5>
+			<label>Name</label>
+			<input class="form-control" type="text" id="playa15Name">
+
+			<label>Goals</label>
+			<input class="form-control" type="number" id="playa15Goals" min="0" value="0">
+
+			<label>Assists</label>
+			<input class="form-control" type="number" id="playa15Assists" min="0" value="0">
+
+			<label>Fouls</label>
+			<input class="form-control" type="number" id="playa15Fouls" min="0" value="0">
+
+			<label>Yellow cards</label>
+			<input class="form-control" type="number" id="playa15Yellows" min="0" value="0">
+
+			<label>Red Cards</label>
+			<input class="form-control" type="number" id="playa15Reds" min="0" value="0">
+
+			<label>Shots On-Target</label>
+			<input class="form-control" type="number" id="playa15ShotsOn" min="0" value="0">
+
+			<label>Shots Off-Target</label>
+			<input class="form-control" type="number" id="playa15ShotsOff" min="0" value="0">
+
+			<label>Saves</label>
+			<input class="form-control" type="number" id="playa15Saves" min="0" value="0">
+		</div>
+	</div>
+	<button class="btn btn-lg btn-outline-primary fixed-bottom" onclick="saver()">Save</button>
+</div>
+
+
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/localforage.min.js"></script>
+<script src="js/football.js"></script>
+</body>
+</html>

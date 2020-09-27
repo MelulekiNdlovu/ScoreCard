@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score card</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!--Testing area-->
+<div id="area52">
+	
+</div>
+
+<div class="container">
+	<h3>Create stats for:</h3>
+	<div class="row">
+		<a href="basketball.html" class="btn btn-primary btn-lg">Basketball</a>
+		<a href="football.html" class="btn btn-primary btn-lg">Football</a>
+	</div>
+</div>
+
+
+<div class="container bg-dark text-white my-2">
+	<h3>My Saved Matches</h3>
+	<button onclick="uploadsaved()">Upload Saved Matches</button>
+	<button onclick="viewsaved()">View Saved Matches</button>
+	<div class="row">
+		<ul id="myMatches">
+			
+		</ul>
+	</div>
+</div>
+
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/localforage.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
